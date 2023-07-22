@@ -45,7 +45,6 @@ public class ComboController {
     @GetMapping("/findByComboId/{id}")
     public ResponseEntity<?> findByComboId(@PathVariable Long id){
         return ResponseEntity.ok(comboDetailService.findByComboId(id));
-
     }
 
 }
